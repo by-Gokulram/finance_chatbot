@@ -23,6 +23,9 @@ GENERAL_ACCOUNTS = {
         "john jacob",
         "percy donald",
         "lisa macintyre",
+        "Gokul",
+        "Vijay",
+        "Abhay"
     ],
     "vendor": ["target", "starbucks", "amazon"],
     "depositor": ["interest", "employer"],

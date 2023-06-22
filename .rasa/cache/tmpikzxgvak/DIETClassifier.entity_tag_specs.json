@@ -1,0 +1,52 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-PERSON",
+      "2": "I-PERSON",
+      "3": "L-PERSON",
+      "4": "U-PERSON",
+      "5": "B-account_type",
+      "6": "I-account_type",
+      "7": "L-account_type",
+      "8": "U-account_type",
+      "9": "B-amount-of-money",
+      "10": "I-amount-of-money",
+      "11": "L-amount-of-money",
+      "12": "U-amount-of-money",
+      "13": "B-credit_card",
+      "14": "I-credit_card",
+      "15": "L-credit_card",
+      "16": "U-credit_card",
+      "17": "B-vendor_name",
+      "18": "I-vendor_name",
+      "19": "L-vendor_name",
+      "20": "U-vendor_name",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-PERSON": 1,
+      "I-PERSON": 2,
+      "L-PERSON": 3,
+      "U-PERSON": 4,
+      "B-account_type": 5,
+      "I-account_type": 6,
+      "L-account_type": 7,
+      "U-account_type": 8,
+      "B-amount-of-money": 9,
+      "I-amount-of-money": 10,
+      "L-amount-of-money": 11,
+      "U-amount-of-money": 12,
+      "B-credit_card": 13,
+      "I-credit_card": 14,
+      "L-credit_card": 15,
+      "U-credit_card": 16,
+      "B-vendor_name": 17,
+      "I-vendor_name": 18,
+      "L-vendor_name": 19,
+      "U-vendor_name": 20,
+      "O": 0
+    },
+    "num_tags": 21
+  }
+]

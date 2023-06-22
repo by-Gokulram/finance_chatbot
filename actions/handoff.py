@@ -35,10 +35,8 @@ class ActionHandoffOptions(Action):
             ]
             dispatcher.utter_message(
                 text=(
-                    "I can't transfer you to a human, "
-                    "but I can transfer you to one of these bots"
-                ),
-                buttons=buttons,
+                    " Tranfering"
+                )
             )
         return []
 
@@ -55,23 +53,27 @@ class ActionHandoff(Action):
     ) -> List[EventType]:
 
         dispatcher.utter_message(template="utter_handoff")
+
         handoff_to = tracker.get_slot("handoff_to")
 
         handoff_bot = handoff_config.get(handoff_to, {})
-        url = handoff_bot.get("url")
 
+        url = "http://3.145.51.33:5005"
+        
+        print(f"URL :: {url}")
         if url:
-            if tracker.get_latest_input_channel() == "rest":
-                dispatcher.utter_message(
-                    json_message={
-                        "handoff_host": url,
-                        "title": handoff_bot.get("title"),
-                    }
-                )
-            else:
-                dispatcher.utter_message(
-                    template="utter_wouldve_handed_off", handoffhost=url
-                )
+            # if tracker.get_latest_input_channel() == "rest":
+            print("Inside")
+            dispatcher.utter_message(
+                json_message={
+                    "handoff_host": url,
+                    "title": "Helpdesk Assistant",
+                }
+            )
+            # else:
+            #     dispatcher.utter_message(
+            #         template="utter_wouldve_handed_off", handoffhost=url
+            #     )
         else:
             dispatcher.utter_message(template="utter_no_handoff")
 

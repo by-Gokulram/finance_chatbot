@@ -11,16 +11,18 @@ rules:
   steps:
   - intent: human_handoff
   - action: utter_ask_handoff
-  - action: action_handoff_options
+  # - action: action_handoff_options
   
 - rule: Execute handoff
   steps:
-  - action: action_handoff_options
-  - intent: trigger_handoff
+  # - action: action_handoff_options
+  - action: utter_ask_handoff
+  - intent: affirm
   - action: action_handoff
 
 - rule: Deny handoff
   steps:
-  - action: action_handoff_options
+  # - action: action_handoff_options
+  - action: utter_ask_handoff
   - intent: deny
   - action: utter_ask_whatelse

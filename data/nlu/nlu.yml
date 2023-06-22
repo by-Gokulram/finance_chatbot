@@ -536,6 +536,8 @@ nlu:
     - who exactly am I able to send money to
     - if I want to transfer money can i send it to anyone
     - show me my money sending list
+    - Beneficiary list
+    - who are my beneficiaries ?
 - intent: help
   examples: |
     - help
@@ -560,9 +562,15 @@ nlu:
     - help pls
     - help?
     - hep me
+    - menu
+    - show me the menu
+    - menu please
 - intent: human_handoff
   examples: |
     - handoff
+    - helpdesk bot
+    - helpdesk assistant
+    - helpdesk help
     - operator
     - I want a human
     - can I speak to an agent
@@ -587,6 +595,11 @@ nlu:
     - let me speak to a real person
     - let me speak to a real person please
     - i want to talk to a real person
+    - I have issues with my laptop
+    - need helpdesk assistance
+    - I forgot my password
+    - need help with laptop
+    - My laptop restart issue
 - intent: out_of_scope
   examples: |
     - what is the square root of 5

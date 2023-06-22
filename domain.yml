@@ -355,7 +355,7 @@ responses:
   utter_goodbye:
   - text: Bye
   utter_noworries:
-  - text: You're welcome :)
+  - text: You're welcome
   utter_transfer_complete:
   - text: Successfully transferred {currency}{amount-of-money} to {PERSON}.
   utter_transfer_charge:
@@ -410,35 +410,35 @@ responses:
     - payload: /affirm
       title: Yes
     - payload: /deny
-      title: No, cancel the transaction
+      title: No,
     text: Would you like to continue scheduling the credit card payment?
   utter_ask_transfer_money_form_AA_CONTINUE_FORM:
   - buttons:
     - payload: /affirm
       title: Yes
     - payload: /deny
-      title: No, cancel the transfer
+      title: No, 
     text: Would you like to continue scheduling the money transfer?
   utter_ask_transaction_search_form_AA_CONTINUE_FORM:
   - buttons:
     - payload: /affirm
       title: Yes
     - payload: /deny
-      title: No, cancel the search
+      title: No, 
     text: Would you like to continue the transaction search?
   utter_ask_cc_payment_form_zz_confirm_form:
   - buttons:
     - payload: /affirm
       title: Yes
     - payload: /deny
-      title: No, cancel the transaction
+      title: No, 
     text: Would you like to schedule a payment of {currency}{amount-of-money}{payment_amount_type} towards your {credit_card} account for {time_formatted}?
   utter_ask_transfer_money_form_zz_confirm_form:
   - buttons:
     - payload: /affirm
       title: Yes
     - payload: /deny
-      title: No, cancel the transaction
+      title: No, 
     text: Would you like to transfer {currency}{amount-of-money} to {PERSON}?
   utter_cc_pay_cancelled:
   - text: Credit card account payment cancelled.
@@ -465,7 +465,7 @@ responses:
   utter_greet:
   - text: Hi! I'm your Financial Assistant!
   utter_ask_handoff:
-  - text: It looks like you want to be transferred to a human agent.
+  - text: "It looks like you want to be transferred to Helpdesk Assistant. \n Do you want me to transfer you to Helpdesk Assistant ?"
   utter_handoff:
   - text: Alright, I'll try to transfer you.
   utter_wouldve_handed_off:
