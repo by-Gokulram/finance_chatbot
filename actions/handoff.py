@@ -58,7 +58,7 @@ class ActionHandoff(Action):
 
         handoff_bot = handoff_config.get(handoff_to, {})
 
-        url = "http://3.145.51.33:5005"
+        url = "http://52.188.160.175:5005"
         
         print(f"URL :: {url}")
         if url:
